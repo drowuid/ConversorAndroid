@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONVERSOR DE MOEDAS"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:fontFamily="sans-serif" />
+
+    <EditText
+        android:id="@+id/edit_moeda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:inputType="number|numberDecimal|numberSigned" />
+
+    <!-- Horizontal layout for buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingHorizontal="16dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/buttonDolares"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Dólares"
+            android:textSize="14sp"
+            android:backgroundTint="#5D3F6E"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"
+            android:padding="6dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp" />
+
+        <Button
+            android:id="@+id/buttonReais"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Reais"
+            android:textSize="14sp"
+            android:backgroundTint="#5D3F6E"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"
+            android:padding="6dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp" />
+
+        <Button
+            android:id="@+id/buttonFrancos"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Francos"
+            android:textSize="14sp"
+            android:backgroundTint="#5D3F6E"
+            android:textColor="#FFFFFF"
+            android:padding="6dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="393dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="10dp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:hint="Resultado"
+        android:padding="10dp"
+        android:textColor="#5D3F6E"
+        android:textSize="50sp" />
+
+
+</LinearLayout>
